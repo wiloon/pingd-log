@@ -33,6 +33,14 @@ func Info(args ...interface{}) {
 	}
 }
 
+func Debug(args ...interface{}) {
+	fileLogger.Debug(args...)
+
+	if logConfig.ToConsole {
+		stdLogger.Debug(args...)
+	}
+}
+
 func getStdLogger() *logrus.Logger {
 	logger := logrus.New()
 	logger.SetLevel(logConfig.GetLogrusLevel())
