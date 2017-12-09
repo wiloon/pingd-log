@@ -15,7 +15,7 @@ type Conf struct {
 }
 
 func (config *Conf) GetParentPath() string {
-	return "/data/logs/" + config.ProjectName
+	return "/data/" + config.ProjectName + "/logs"
 }
 
 func (config *Conf) GetFullPath() string {
