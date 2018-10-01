@@ -1,11 +1,11 @@
 package log
 
 import (
-	_ "golang.org/x/sys/unix"
-	"os"
-	"log"
 	"github.com/sirupsen/logrus"
 	"github.com/wiloon/app-config"
+	_ "golang.org/x/sys/unix"
+	"log"
+	"os"
 )
 
 var fileLogger *logrus.Logger
@@ -33,11 +33,27 @@ func Info(args ...interface{}) {
 	}
 }
 
+func Infof(format string, args ...interface{}) {
+	fileLogger.Infof(format, args...)
+
+	if logConfig.ToConsole {
+		stdLogger.Infof(format, args...)
+	}
+}
+
 func Debug(args ...interface{}) {
 	fileLogger.Debug(args...)
 
 	if logConfig.ToConsole {
 		stdLogger.Debug(args...)
+	}
+}
+
+func Debugf(format string, args ...interface{}) {
+	fileLogger.Debugf(format, args...)
+
+	if logConfig.ToConsole {
+		stdLogger.Debugf(format, args...)
 	}
 }
 
