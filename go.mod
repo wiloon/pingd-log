@@ -7,7 +7,3 @@ require (
 	github.com/wiloon/pingd-config v0.0.0-20190825052039-3de65a90d7c4
 	github.com/wiloon/pingd-utils v0.0.0-20190907105704-0ad510e19a45
 )
-
-replace github.com/wiloon/pingd-config => /home/wiloon/projects/pingd-config/
-
-replace github.com/wiloon/pingd-utils => /home/wiloon/projects/pingd-utils/
