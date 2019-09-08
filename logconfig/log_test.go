@@ -8,4 +8,5 @@ import (
 func Test0(t *testing.T) {
 	Init()
 	logrus.Info("foo")
+	logrus.Debugf("bar")
 }
