@@ -21,7 +21,7 @@ func Init() {
 		}
 
 	}
-	fullPath := path + fileName
+	fullPath := path + string(os.PathSeparator) + fileName
 	logrus.Infof("open log file: %v", fullPath)
 	file, err := os.OpenFile(fullPath, os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0666)
 	if err == nil {

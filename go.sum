@@ -18,6 +18,8 @@ github.com/wiloon/pingd-config v0.0.0-20190825052039-3de65a90d7c4 h1:S2wHJVEFmxc
 github.com/wiloon/pingd-config v0.0.0-20190825052039-3de65a90d7c4/go.mod h1:kaN9/6M+C14iO2pKb1XJDjexcwv598pUHqGeFiFbUjQ=
 github.com/wiloon/pingd-utils v0.0.0-20190907105704-0ad510e19a45 h1:GSaNkkUKWBNIDjKKcvnacuByhszRIDndQqESez1buvQ=
 github.com/wiloon/pingd-utils v0.0.0-20190907105704-0ad510e19a45/go.mod h1:n2ltmgQhplSzpoSJUBM8nUF1c2jztdp9PX9PA8MuvRM=
+github.com/wiloon/pingd-utils v0.0.0-20191028083409-83b7394dd71f h1:TSNbY1xV5iprel4yq2QPAHV4NV/j5cbK4OtZpKQ0rZI=
+github.com/wiloon/pingd-utils v0.0.0-20191028083409-83b7394dd71f/go.mod h1:n2ltmgQhplSzpoSJUBM8nUF1c2jztdp9PX9PA8MuvRM=
 golang.org/x/sys v0.0.0-20190422165155-953cdadca894 h1:Cz4ceDQGXuKRnVBDTS23GTn/pU5OE2C0WrNTOYK1Uuc=
 golang.org/x/sys v0.0.0-20190422165155-953cdadca894/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405 h1:yhCVgyC4o1eVCa2tZl7eS0r+SDo693bJlVdllGtEeKM=
