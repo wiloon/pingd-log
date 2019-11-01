@@ -22,9 +22,10 @@ func Init() {
 
 	}
 	fullPath := path + string(os.PathSeparator) + fileName
-	logrus.Infof("open log file: %v", fullPath)
+	logrus.Infof("log, full path: %v", fullPath)
 	file, err := os.OpenFile(fullPath, os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0666)
 	if err == nil {
+		logrus.Infof("set output log file: %v", fullPath)
 		logrus.SetOutput(file)
 	} else {
 		logrus.Infof("Failed to log to file, using default stderr,error: %v", err)
