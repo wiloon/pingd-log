@@ -1,4 +1,4 @@
-module github.com/wiloon/pingd-log/v2
+module github.com/wiloon/pingd-log
 
 go 1.15
 
